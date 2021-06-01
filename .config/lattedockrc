@@ -1,0 +1,50 @@
+[DownloadDialog Settings]
+eDP Height 1920x1080=470
+eDP Width 1920x1080=700
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[LatteSettingsDialog]
+downloadWindowSize=800,550
+windowSize=700,624
+
+[LatteSettingsDialog][TabLayouts]
+columnWidths=30,77,78,0
+sortColumn=3
+sortOrder=0
+
+[PlasmaThemeExtended]
+outlineWidth=1
+
+[PlasmaTransientsConfig]
+PreloadWeight=42
+enableKWinEdges=true
+raiseOnActivityChange=false
+raiseOnDesktopChange=false
+timerHide=700
+timerShow=0
+
+[PlasmaTransientsConfig][ConfigDialog]
+DialogHeight=648
+DialogWidth=539
+
+[ScreenConnectors]
+10=eDP-1
+11=eDP
+
+[UniversalSettings]
+badges3DStyle=false
+canDisableBorders=false
+currentLayout=My Layout
+downloadWindowSize=800,550
+lastNonAssignedLayout=My Layout
+launchers=
+layoutsColumnWidths=117,80,66,0
+layoutsWindowSize=700,563
+memoryUsage=0
+metaPressAndHoldEnabled=false
+mouseSensitivity=1
+screenTrackerInterval=2500
+showInfoWindow=true
+version=2

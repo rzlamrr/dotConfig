@@ -1,0 +1,30 @@
+function mkcd() {
+  mkdir -p "$1"
+  cd "$1"
+}
+
+function gdl() {
+  CONFIRM=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate "https://drive.google.com/u/0/uc?id=$1&export=download" -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')
+  wget --load-cookies /tmp/cookies.txt "https://drive.google.com/u/0/uc?id=$1&export=download&confirm=$CONFIRM" -O $2
+  rm -rf /tmp/cookies.txt
+}
+
+# call from your terminal
+# weather yourcity intervalDay
+# weather Jakarta 0 > for current info
+# weather Jakarta 1 > for 1 day
+# etc
+function weather() {
+  curl wttr.in/$1\?$2
+}
+
+function vdl() {
+  youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "$1"
+}
+
+alias mdl='youtube-dl -x --audio-format mp3'
+
+# Alias for usefull tools
+alias checkmem="sudo ps_mem -S"
+
+alias gmirror="sudo reflector --verbose --protocol https --sort rate --country ID,SG,JP,AU,KR --latest 50 -f 15 -n 15 --save /etc/pacman.d/mirrorlist; sudo pacman -Syyu"
