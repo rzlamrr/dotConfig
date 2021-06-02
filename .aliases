@@ -28,3 +28,8 @@ alias mdl='youtube-dl -x --audio-format mp3'
 alias checkmem="sudo ps_mem -S"
 
 alias gmirror="sudo reflector --verbose --protocol https --sort rate --country ID,SG,JP,AU,KR --latest 50 -f 15 -n 15 --save /etc/pacman.d/mirrorlist; sudo pacman -Syyu"
+
+git config --global user.name "rzlamrr"
+git config --global user.email "rzlamrr.dvst@protonmail.com"
+git config --global core.editor "nano"
+git config --global credential.helper "store"

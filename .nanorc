@@ -1,0 +1,11 @@
+include "/usr/share/nano/python.nanorc"
+set autoindent
+set backup
+set backupdir "~/backup"
+set constantshow
+set indicator
+set linenumbers
+set magic
+set nonewlines
+set regexp
+set tabsize 4
